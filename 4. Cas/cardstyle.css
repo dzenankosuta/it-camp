@@ -1,0 +1,49 @@
+body {
+    background-color: rgb(255, 170, 170);
+}
+
+.cl1 {
+    margin: 100px auto;
+    width: 500px;
+    height: 600px;
+    border: 1.5px solid darkred;
+    border-radius: 8px;
+    padding: 0px;
+}
+
+.cl2 {
+    margin: 0px;
+    width: 500px;
+    height: 200px;
+    border-bottom: 1px solid darkred;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    padding: 0px;
+}
+
+.cl3 {
+    margin: 0px;
+    width: 500px;
+    height: 400px;
+    padding: 5px;
+}
+
+.cl3 h1 {
+    text-transform: uppercase;
+}
+
+#sl {
+    width: 500px;
+    height: 200px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+.cl1:hover {
+    background-color: aqua;
+}
+
+.cl4 {
+    margin-right: 7px;
+    padding-top: 70px;
+}

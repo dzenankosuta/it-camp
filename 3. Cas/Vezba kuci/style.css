@@ -1,0 +1,60 @@
+body {
+    background-color: rgb(216, 166, 105);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: darkslategray;
+}
+
+div {
+    text-align: justify;
+    border: 1px solid brown;
+    padding: 10px 10px 10px 10px;
+}
+
+.cl1 {
+    float: left;
+    margin: 0 auto;
+    background-color: azure;
+}
+
+#id1 {
+    color: blue;
+}
+
+.cl2 {
+    float: left;
+    width: 500px;
+    height: 300px;
+    margin: 10px 0px 10px 20px;
+    background-color: rgb(87, 21, 21);
+}
+
+.cl2 p {
+    color:blueviolet;
+}
+
+.cl3 {
+    float: left;
+    width: 500px;
+    height: 300px;
+    margin: 0;
+    background-color:#555;
+    color: yellow;
+}
+
+#id2 {
+    color: white;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    text-align: center;
+}
+
+.cl4 {
+    float: left;
+    border: 1px dashed black;
+    margin-bottom: 10px;
+    padding-right: 0px;
+}
+.cl4 #hid {
+    text-align: right;
+}
