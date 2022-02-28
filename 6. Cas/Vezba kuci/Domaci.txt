@@ -1,0 +1,7 @@
+Adresa,
+Grad,
+>sobe,
+>kupatila,
+>bazen,
+>kvadratura
+...
