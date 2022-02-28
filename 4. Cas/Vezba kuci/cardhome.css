@@ -1,0 +1,40 @@
+
+body{
+    background-color: #d2b48c;
+}
+
+.cl1{
+    background-color: #d2691e;
+    margin: 100px auto;
+    width: 500px;
+    height: 600px;
+    border: 1px dotted #800000;
+    border-radius: 20px;
+}
+
+.cl1 h1 {
+    text-align: center;
+    text-transform: uppercase;
+    padding: 15px;
+}
+
+#podnaslov {
+    padding: 0px 15px 0px 15px;
+}
+
+#paragraf {
+    text-align: justify;
+    padding: 15px;
+}
+
+.cl1:hover {
+    background-color: #cd853f;
+    color: #2f4f4f;
+}
+
+.cl1 img {
+    width: 500px;
+    height: 200px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
