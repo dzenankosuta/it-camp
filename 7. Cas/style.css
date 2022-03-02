@@ -1,0 +1,36 @@
+body {
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+
+
+div {
+    display: inline-block;
+    width: 500px;
+    height: 500px;
+    background-color: #eee34e;
+}
+
+i span {
+    color: red;
+    margin-left: 5px;
+}
+
+#jedan {
+    color: blue;
+}
+
+.naslov span {
+    color: red;
+}
+
+
+/* Preporucuje se sakrivanje na sledeci nacin: (NE UZIMA PROSTOR I MESTO)*/
+/* .naslov {
+    display: none;
+} */
+
+/* Ne preporucuje se sakrivanje na sledeci nacin: (UZIMA PROSTOR I MESTO) */
+.naslov {
+    visibility: hidden;
+}
