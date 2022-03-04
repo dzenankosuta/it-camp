@@ -1,0 +1,19 @@
+body {
+    font-family: 'Hubballi', cursive;
+    background-color:#ddae71;
+}
+
+.klasa {
+    margin: 60px auto;
+    width: 500px;
+    height: 600px;
+    background-color:#7fe490;
+    background-image: url('image.jpg');
+    background-repeat: no-repeat;
+    /* background-size: 500px; <- stavlja sirinu pozadine 500px, visina se srazmerno povecava. */
+    /* background-size: 500px 600px; <- prva vrednost se odnosi na sirinu, druga na visinu pozadine.  */
+    /* background-size: auto; <- postavlja pozadinu u svom prirodnom formatu bez obzira na velicinu kontejnera.  */
+    /* background-size: contain; <- Prekriva kontejner prikazivajuci celu sliku. */
+    /* background-size: cover; <- prekriva kontejner ako je cak i potrebno iseci sliku.  */
+    background-size: 100% 80%;
+}
