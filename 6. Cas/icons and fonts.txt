@@ -1,3 +1,4 @@
 https://www.w3schools.com/icons/fontawesome_icons_intro.asp    -> font-awesome library v4 (link for head)
 https://fontawesome.com/v4/icons/                              -> font-awesome icons (v4)
 https://fonts.google.com/                                      -> google fonts
+https://www.cssfontstack.com/                                  -> fontstack fonts
