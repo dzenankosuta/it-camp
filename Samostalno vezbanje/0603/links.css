@@ -1,0 +1,23 @@
+/* order matters */
+a {
+    color: #eb2424;
+    text-decoration: none;
+}
+
+a:visited {
+    color: #5d569b;
+}
+
+a:hover {
+    color: #7aa309;
+}
+
+a:active {
+    color: #8b254d;
+}
+
+
+
+.implink {
+    color: rgb(223, 181, 181);
+}
