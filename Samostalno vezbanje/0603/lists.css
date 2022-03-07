@@ -1,0 +1,40 @@
+body {
+    background-color:#d2b48c;
+    font-family: 'Arial Rounded MT Bold','Helvetica Rounded',Arial,sans-serif; 
+    font-size: 16px;
+    text-align: center;
+}
+
+h1 {
+    font-size: 48px;
+    color: #2629c9;
+    font-weight: 800;
+}
+
+h2 {
+    color: #16175f;
+}
+
+ul {
+    margin: 10px;
+    padding: 10px;
+    background: #a32258;
+    color: #ffffff;
+    list-style-type: circle;
+    list-style-position: inside;
+}
+
+ul li {
+    margin: 10px;  
+    padding: 10px;
+    background: #df4484;
+}
+
+ol li {
+    margin: 10px;  
+    padding: 10px;
+    background: #df4484;
+    list-style-type: upper-alpha;
+    list-style-position: inside;
+}
+
