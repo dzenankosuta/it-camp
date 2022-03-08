@@ -1,0 +1,43 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.navbar{
+    height: 10vh;
+    width: 100%;
+    background: blue;
+    position: sticky;
+    left: 0;
+}
+
+.hero{
+    height: 30vh;
+    width: 100%;
+    background: orange;
+}
+
+.footer{
+    position: fixed;
+    bottom: 0;
+    background: grey;
+    height: 10vh;
+    width: 100%;
+}
+
+.relative{
+    position: relative;
+    width: 50%;
+    height: 20vh;
+    margin: 0 auto;
+    background: red;
+}
+
+.absolute{
+    position: absolute;
+    top:80px;
+    right: 0px;
+    width: 200px;
+    height: 100px;
+    background-color: green;
+}
