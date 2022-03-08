@@ -1,0 +1,44 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color:#d2b48c;
+}
+
+.main {
+    background-color: #a6e2b0;
+    margin: 15vh auto;
+    width: 80%;
+    height: 70vh;
+    text-align: center;
+    position: relative;
+}
+
+.boxone {
+    background-color: #73bfd6;
+    width: 15vw;
+    height: 15vh;
+    opacity: .5;
+    position: absolute;
+    z-index: 5;
+}
+
+.boxtwo {
+    background-color: #adcc22;
+    width: 15vw;
+    height: 15vh;
+    position: absolute;
+    bottom: 5vw;
+    right: 5vh;
+}
+
+.boxthree {
+    background-color: #b13c3c;
+    width: 15vw;
+    height: 15vh;
+    position: relative;
+    top: 5vw;
+    left: 5vh;
+}
