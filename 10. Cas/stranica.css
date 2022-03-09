@@ -1,0 +1,72 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.nav-bar{
+    font-family: 'Titillium 700',sans-serif;
+    font-size: 25px;
+    background-color: beige;
+    display: flex;
+    color: rgb(25, 25, 150);
+}
+
+main{
+    font-size: 25px;
+    margin: 10px;
+    width: 100vw;
+    height: 80vh;
+    background-color: beige;
+}
+
+main p{
+    font-family: 'Roboto' sans-serif;
+    font-weight: bold;
+    margin-top: 5px;
+}
+
+main img{
+    height: 300px;
+    width: 300px;
+    margin-top: -25px;
+    margin-left: 1500px;
+    margin-bottom: 150px;
+}
+
+.kocke{
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+.prva-kocka{
+    display: flex;
+    width: 300px;
+    height: 300px;
+    background-color: white;
+}
+
+.druga-kocka{
+    width: 300px;
+    height: 300px;
+    background-color: green;
+}
+
+.treca-kocka{
+    width: 300px;
+    height: 300px;
+    background-color: wheat;
+}
+
+footer{
+    width: 100vw;
+    background-color: black;
+    height: 20vh;
+}
+
+footer p{
+    font-size: 50px;
+    color: white;
+    text-align: center;
+    padding-left: -10px;
+}
