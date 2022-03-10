@@ -28,6 +28,7 @@ header {
 
 .center {
     width: 1366px;
+    position: relative;
 }
 
 footer {
@@ -145,4 +146,10 @@ header .navbar {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.center .center-bottom {
+    margin: 30px;
+    height: 150px;
+    text-align: justify;
 }
