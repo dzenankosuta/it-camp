@@ -1,0 +1,148 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Josefin Sans', sans-serif;
+    background-color: #a2ebc0;
+    font-size: 16px;
+}
+
+.main {
+    margin: 0 auto;
+    width: 1366px;
+    height: 100vh;
+    position: relative;
+}
+
+header {
+    width: 1366px;
+    height: 15vh;
+    background-color: #61dd9f;
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 3rem;
+}
+
+.center {
+    width: 1366px;
+}
+
+footer {
+    width: 1366px;
+    height: 10vh;
+    background-color: #0b1b38;
+    font-size: 1.5rem;
+    color: #61dd9f;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    bottom: 0;
+}
+
+
+
+header .logo img{
+    width: 9rem;
+    height: 9rem;
+    margin-right: 30em;
+    position: relative;
+    top: 10px;
+    left: 10px;
+}
+
+
+header .navbar a {
+    font-size: 1.2rem;
+    color: #7689f5;
+    padding-left: 1em;
+    text-decoration: none;
+}
+
+header .navbar a:visited {
+    color: #2b3677;
+}
+
+header .navbar a:hover {
+    color: #982aa7;
+}
+
+header .navbar a:active {
+    color: #e8ebff;
+}
+
+header .navbar {
+    align-self: end;
+    margin-bottom: 10px;
+}
+
+.center .center-top {
+    display: flex;
+    justify-content: center;
+}
+
+.center .center-middle {
+    margin: 30px;
+    height: 300px;
+    display: flex;
+    justify-content: space-between;    
+}
+
+.boxone {
+    background-color: #982aa7;
+    width: 100px;
+    height: 100px;
+    align-self: start;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.boxtwo {
+    background-color: #a72a4f;
+    width: 100px;
+    height: 100px;
+    align-self: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.boxthree {
+    background-color: #a72a30;
+    width: 100px;
+    height: 100px;
+    align-self: end;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.boxfour {
+    background-color: #b9c48c;
+    width: 100px;
+    height: 100px;
+    align-self: end;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.boxfive {
+    background-color: #6a5e7a;
+    width: 100px;
+    height: 100px;
+    align-self: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.boxsix {
+    background-color: #282529;
+    width: 100px;
+    height: 100px;
+    color: #ffffff;
+    align-self: start;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
