@@ -1,0 +1,26 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+div{
+    margin: 0 auto;
+    width: 500px;
+    height: 500px;
+    background-color: rgba(255,0,0,0.2);
+}
+
+/* h1{
+    font-size: 50px;
+}
+.drugi{
+    background-color: blue;
+    opacity: .4;
+} */
+
+img{
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    float: right;
+}
