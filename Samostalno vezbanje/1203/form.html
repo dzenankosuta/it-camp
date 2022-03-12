@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./form.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Roboto&display=swap" rel="stylesheet">
+    <title>Form</title>
+</head>
+
+<body>
+    <div class="container">
+        <h2>Ovde želimo prikazati forme i neke njene mogućnosti.</h2> <br> <br>
+        <form action="./form.html">
+
+            <label for="name">Username</label>
+            <input type="text" name="name" id="name" required> <br>
+
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" required> <br>
+
+            <label for="pass">Password</label>
+            <input type="password" name="pass" id="pass" required> <br>
+
+            <label for="age">Age</label>
+            <input type="number" name="age" id="age" min="1" max="149" step="1"> <br>
+
+            <label for="date">Birthdate</label>
+            <input type="date" name="date" id="date" min="1900-01-01" max="2021-12-31"> <br>
+
+            Favorite food: <br>
+
+            <label for="banana">Banana</label>
+            <input type="checkbox" name="banana" id="banana"> <br>
+
+            <label for="kiwi">Kiwi</label>
+            <input type="checkbox" name="kiwi" id="kiwi" checked> <br>
+
+            <label for="apple">Apple</label>
+            <input type="checkbox" name="apple" id="apple"> <br>
+
+
+            Gender: <br>
+
+            <label for="male">Male</label>
+            <input type="radio" name="gender" id="male" value="male">
+            <label for="female">Female</label>
+            <input type="radio" name="gender" id="female" value="female"> <br>
+
+
+            <label for="eyeColor">Eye Color</label>
+            <select name="eyeColor" id="eyeColor">
+                <option value="Green">Green</option>
+                <option value="Brown" selected>Brown</option>
+                <option value="Black">Black</option>
+            </select> <br>
+
+            <label for="bio">Bio:</label> <br>
+            <textarea name="bio" id="bio" cols="25" rows="6">Ja PA jA</textarea> <br>
+
+            <button type="reset">Reset</button>
+            <button type="submit">Submit</button>
+
+        </form>
+
+    </div>
+</body>
+
+</html>
