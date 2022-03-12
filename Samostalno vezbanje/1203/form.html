@@ -15,16 +15,16 @@
 <body>
     <div class="container">
         <h2>Ovde želimo prikazati forme i neke njene mogućnosti.</h2> <br> <br>
-        <form action="./form.html">
+        <form action="./form.html" method="GET" enctype="multipart/form-data">
 
             <label for="name">Username</label>
-            <input type="text" name="name" id="name" required> <br>
+            <input type="text" name="name" id="name" placeholder="Username" required> <br>
 
             <label for="email">Email</label>
-            <input type="email" name="email" id="email" required> <br>
+            <input type="email" name="email" id="email" placeholder="Email address" required> <br>
 
             <label for="pass">Password</label>
-            <input type="password" name="pass" id="pass" required> <br>
+            <input type="password" name="pass" id="pass" placeholder="Password" required> <br>
 
             <label for="age">Age</label>
             <input type="number" name="age" id="age" min="1" max="149" step="1"> <br>
@@ -61,6 +61,20 @@
 
             <label for="bio">Bio:</label> <br>
             <textarea name="bio" id="bio" cols="25" rows="6">Ja PA jA</textarea> <br>
+
+            <input type="hidden" name="hidden" value="hi"> <br>
+
+            <label for="file">File</label>
+            <input type="file" name="file" id="file"> <br>
+
+            <label for="phone">Phone</label>
+            <input type="tel" name="phone" id="phone"> <br>
+
+            <label for="url">URL</label>
+            <input type="url" name="url" id="url"> <br>
+
+            <label for="color">Color</label>
+            <input type="color" name="color" id="color"> <br>
 
             <button type="reset">Reset</button>
             <button type="submit">Submit</button>
