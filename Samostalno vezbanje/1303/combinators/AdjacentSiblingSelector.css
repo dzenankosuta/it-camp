@@ -1,0 +1,20 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Josefin Sans', sans-serif;
+    background-color: #a2ebc0;
+    font-size: 16px;
+}
+
+div, p, h2 {
+    margin: 20px auto;
+    width: 80vw;
+    line-height: 1.5em;
+}
+
+div + p {
+    background-color: #ffff00;
+}
