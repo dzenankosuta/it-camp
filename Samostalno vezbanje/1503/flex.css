@@ -23,7 +23,7 @@ header {
 header .container {
     padding: 15px;  
     height: 100%;
-    background-color: #eee34e;
+    background-color: #b6ec91;
     display: flex;
     justify-content: space-between;
 }
@@ -73,4 +73,55 @@ header .navbar ul li a:hover {
 header .navbar ul li a:active {
     color: #dcfaff;
 }
+
+main .container {
+    padding: 20px;
+    height: 75vh;
+    display: flex;
+    justify-content: space-around;
+}
+
+main .container .text {
+    flex-basis: 40%;
+    align-self: center;
+}
+
+main .container .text h2{
+    text-align: center;
+    margin-bottom: 1em;
+}
+
+
+main .container .boxes {
+    flex-basis: 50%;
+    background-color: #bfe7e1;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+main .container .boxes .box {
+    width: 20%;
+    height: 20%;
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box:nth-of-type(1) {
+    align-self: start;
+    background-color: #21606b;
+    color: #ffffff;
+}
+
+.box:nth-of-type(2) {
+    background-color: #b8dce2;
+}
+
+.box:nth-of-type(3) {
+    align-self: flex-end;
+    background-color: #2ba16a;
+}
+
 
