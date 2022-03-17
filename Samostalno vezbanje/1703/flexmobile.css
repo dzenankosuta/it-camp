@@ -35,11 +35,11 @@ header .logo {
 }
 
 
-header .logo img {
-    margin-top: 20px;
+header .container .logo img {
+    margin-top: 10px;
     margin-left: 30px;
-    width: 120%;
-    height: 120%;
+    max-width: 150%;
+    max-height: 150%;
 }
 
 header .navbar {
@@ -63,9 +63,6 @@ header .navbar ul li a {
     color: #3191a1;
 }
 
-header .navbar ul li a:visited {
-    color: #21606b;
-}
 
 header .navbar ul li a:hover {
     color: #00a3c0;
@@ -76,6 +73,37 @@ header .navbar ul li a:hover {
 
 header .navbar ul li a:active {
     color: #dcfaff;
+}
+
+@media (max-width: 600px) {
+    header .container {
+        padding: 5px; 
+    }
+
+    header .container .logo img {
+        margin-top: 5px;
+        margin-left: 10px;
+        margin-right: 25px;
+        max-width: 120%;
+        max-height: 120%;
+    }
+
+    header .navbar ul li a {
+        margin: 2px 3px;
+        /* white-space: nowrap; */
+    }
+
+    header .navbar ul li a:hover {
+        color: #00a3c0;
+        background-color: #eee99e;
+        border-radius: 10px;
+        padding: 3px;
+    }
+
+}
+
+main {
+    width: 100vw;
 }
 
 main .container {
@@ -111,6 +139,8 @@ main .container .boxes {
 main .container .boxes .box {
     width: 20%;
     height: 20%;
+    min-width: 5rem;
+    max-height: 10rem;
     margin: 20px;
     display: flex;
     justify-content: center;
@@ -132,6 +162,42 @@ main .container .boxes .box {
     background-color: #2ba16a;
 }
 
+@media (max-width: 600px) {
+    main .container {
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    main .container .text {
+        margin-bottom: 0.5em;
+    }
+
+    main .container .text h2{
+        margin-top: 0.5em;
+        margin-bottom: 0.5em;
+    }
+
+    main .container .boxes {
+        margin-bottom: 0.5em;
+    }
+
+    main .container .boxes {
+        min-height: 20rem;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    main .container .boxes .box {
+        width: 5rem;
+        height: 5rem;
+        margin: 10px;
+    }
+
+}
+
 footer {
     width: 100vw;
     background-color: #72ad4b;
@@ -146,4 +212,13 @@ footer .container {
     justify-content: center;
     align-items: end;
     padding-bottom: 0.3em;  
+}
+
+@media (max-width: 600px) {
+    footer .container {
+        font-size: smaller;
+        align-items: center;
+        padding-bottom: 0;  
+    }
+
 }
