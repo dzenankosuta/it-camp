@@ -1,0 +1,25 @@
+.glavni{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+
+}
+.a {
+    width: 75px;
+    height: 75px;
+    margin: 15px;
+    background-color: #ff0000;
+}
+
+
+@media (max-width: 600px) {
+    .glavni {
+        flex-direction: column;
+    }
+
+    .a {
+        background-color: #00ffff;
+    }
+    
+}
