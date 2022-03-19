@@ -32,7 +32,7 @@ body {
 
 .parent:hover .child {
     animation: left-to-right 2s ease-in forwards 3 alternate;
-    
+    /* animation: left-to-right 2s ease-in forwards infinite alternate; */
 
     color: #ff0000;
 }
