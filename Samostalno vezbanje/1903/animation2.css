@@ -31,13 +31,13 @@ body {
 }
 
 .parent:hover .child {
-    animation: left-to-right 2s ease-in forwards 3 alternate;
+    animation: top-to-bottom 2s ease-in forwards 3 alternate;
     /* animation: left-to-right 2s ease-in forwards infinite alternate; */
 
     color: #ff0000;
 }
 
-@keyframes left-to-right {
+@keyframes top-to-bottom {
     0% {
         transform: translateY(0);
     }
