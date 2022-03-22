@@ -1,0 +1,26 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Josefin Sans', sans-serif;
+    background-color: #a2ebc0;
+    font-size: 16px;
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 1000px;
+    background-color: #75e6a4;
+    padding: 20px;
+    text-align: center;
+}
+
+
+.letter {
+    line-height: 2rem;
+    letter-spacing: 0.3rem;
+}
+
