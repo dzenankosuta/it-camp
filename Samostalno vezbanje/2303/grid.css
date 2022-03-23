@@ -1,0 +1,37 @@
+* {
+    margin: 0;
+}
+
+.grid-container {
+    margin: 0 auto;
+    width: 800px;
+    background: #eeeeee;
+
+    display: grid;
+    /* grid-template-columns: 1fr 1fr 1fr; */
+    grid-template-columns: repeat(3, 100px);
+    grid-auto-rows: minmax(150px, auto);     /* This is for each row */
+    grid-template-rows: 200px; /* This is just for first row */
+    grid-row-gap: 20px;
+    grid-column-gap: 10px;
+    /* grid-gap: 20px; This is gap for both row and column */
+    grid-template-areas:
+        'header header header'
+        'sidebar content content'
+        'sidebar content content'
+} 
+
+.grid-item-1 {
+    background-color:yellow;
+    grid-area: header;
+}
+
+.grid-item-2 {
+    background-color:red;
+    grid-area: sidebar;
+}
+
+.grid-item-3 {
+    background-color:blue;
+    grid-area: content;
+}
