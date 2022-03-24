@@ -63,7 +63,7 @@ header .container .head .navbar ul li a:hover{
     color: #d3d3d3;
 }
 
-.navbar ul li .button1 {
+.button1 {
     margin-left: 35px;
     width: 130px;
     height: 50px;
@@ -73,10 +73,33 @@ header .container .head .navbar ul li a:hover{
     color: #525252;
 }
 
-.navbar ul li .button1:hover {
+.button1:hover {
     color: #ffffff;
     background-color: #412fb3;
     border: 1px solid #ffffff;
 }
 
+main {
+    display: inline-block;
+}
+
+main .container .background {
+    width: 100vw;
+    height: 650px;
+    background-image: url(./background.webp);
+    background-position: cover;
+}
+
+main .container .background .firstcontent {
+    margin: 0 auto;
+    max-width: 1366px;
+    height: 100%;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+}
+
+main .container .background .firstcontent img {
+    flex-basis: 50%;
+}
 
