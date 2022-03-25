@@ -77,18 +77,16 @@ header .container .head .navbar ul li a:hover{
     border: 1px solid #ffffff;
 }
 
-main {
-    display: inline-block;
-}
 
-main .container .background {
+.background {
+    margin: 0 auto;
     width: 100vw;
     height: 700px;
     background-image: url(./background.webp);
     background-position: cover;
 }
 
-main .container .background .firstcontent {
+.background .firstcontent {
     margin: 0 auto;
     max-width: 1300px;
     height: 100%;
@@ -98,22 +96,22 @@ main .container .background .firstcontent {
     color: #ffffff;
 }
 
-main .container .background .firstcontent img {
+.background .firstcontent img {
     flex-basis: 50%;
 }
 
-main .container .background .firstcontent .class1 {
+.background .firstcontent .class1 {
     flex-basis: 30%;
     margin-right: 100px;
 }
 
-main .container .background .firstcontent .class1 h1 {
+.background .firstcontent .class1 h1 {
     margin-bottom: 0.7em;
     font-size: 2.5rem;
     line-height: 3rem;
 }
 
-main .container .background .firstcontent .class1 p {
+.background .firstcontent .class1 p {
     margin-bottom: 3em;
 }
 
@@ -133,6 +131,11 @@ main .container .background .firstcontent .class1 p {
 }
 
 
+main.container {
+    display: inline-block;
+}
+
+
 main .container .class2 {
     margin: 7rem auto;
     width: 50%;
@@ -147,4 +150,37 @@ main .container .class2 h1 {
 
 main .container .class2 p {
     color: #797979;
+}
+
+#icon {
+    color: #0d0064;
+    font-size: 1.5rem;
+    margin-bottom: 1.2rem;
+}
+
+main .container .boxes1 {
+    margin: 0 auto;
+    width: 80%;
+    margin-bottom: 9rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+main .container .boxes1 .box1 {
+    margin: 5px;
+    flex-basis: 35%;
+    padding: 30px;
+    background-color: #faf9ff;
+}
+
+main .container .boxes1 h3 {
+    font-family: "Rajdhani",sans-serif;
+    color: #3a414e;
+    line-height: 1.25;
+}
+
+main .container .boxes1 .box1:hover {
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    background-color: #ffffff;
 }
