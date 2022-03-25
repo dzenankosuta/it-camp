@@ -69,6 +69,12 @@ header .container .head .navbar ul li a:hover{
     border-radius: 20% / 50%;
     font-weight: bolder;
     color: #525252;
+
+    transition: all .4s ease;
+    transition-property: all;
+    transition-duration: 0.4s;
+    transition-timing-function: ease;
+    transition-delay: 0s;
 }
 
 .button1:hover {
@@ -122,11 +128,17 @@ header .container .head .navbar ul li a:hover{
     border-radius: 15% / 50%;
     font-weight: bolder;
     color: #525252;
+
+    transition: all .4s ease;
+    transition-property: all;
+    transition-duration: 0.4s;
+    transition-timing-function: ease;
+    transition-delay: 0s;
 }
 
 .button2:hover {
     color: #ffffff;
-    background-color: #412fb3;
+    background-color: #322779;
     border: 1px solid #ffffff;
 }
 
@@ -161,7 +173,7 @@ main .container .class2 p {
 main .container .boxes1 {
     margin: 0 auto;
     width: 80%;
-    margin-bottom: 9rem;
+    margin-bottom: 8rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -172,15 +184,74 @@ main .container .boxes1 .box1 {
     flex-basis: 35%;
     padding: 30px;
     background-color: #faf9ff;
+
+    transition: all .3s ease 0s;
+    transition-property: all;
+    transition-duration: 0.3s;
+    transition-timing-function: ease;
+    transition-delay: 0s;
 }
 
 main .container .boxes1 h3 {
     font-family: "Rajdhani",sans-serif;
     color: #3a414e;
     line-height: 1.25;
+    margin-bottom: 0.8rem;
+
 }
 
 main .container .boxes1 .box1:hover {
     box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
     background-color: #ffffff;
+}
+
+
+main .container .class3 {
+    margin: 0 auto;
+    width: 90%;
+    height: 500px;
+    background-color:#faf9ff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+main .container .class3 .subclass3 {
+    margin-left: 1.5rem;
+}
+
+main .container .class3 .subclass3 h2 {
+    font-size: 30px;
+    font-weight: 700;
+    font-family: "Rajdhani",sans-serif;
+    color: #3a414e;
+    line-height: 1.25;
+    margin-bottom: 0.8rem;
+}
+
+main .container .class3 .subclass3 p {
+    margin-bottom: 2.5rem;
+}
+
+.button3 {
+    width: 160px;
+    height: 50px;
+    border: 1px solid #412fb3;
+    border-radius: 15% / 50%;
+    font-weight: bolder;
+    font-size: 15px;
+    color: #525252;
+    background-color:#faf9ff;
+
+    transition: all .4s ease;
+    transition-property: all;
+    transition-duration: 0.4s;
+    transition-timing-function: ease;
+    transition-delay: 0s;
+}
+
+.button3:hover {
+    color: #ffffff;
+    background-color: #21146a;
+    border: 1px solid #21146a;
 }
