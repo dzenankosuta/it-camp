@@ -205,22 +205,26 @@ main .container .boxes1 .box1:hover {
     background-color: #ffffff;
 }
 
-
-main .container .class3 {
-    margin: 0 auto;
-    width: 90%;
-    height: 500px;
+.class3 {
+    width: 100vw;
     background-color:#faf9ff;
+    height: 500px;
+}
+
+.class3 .subclass3 {
+    margin: 0 auto;
+    max-width: 1150px;
+    height: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-main .container .class3 .subclass3 {
+.class3 .subclass3 .subsubclass3 {
     margin-left: 1.5rem;
 }
 
-main .container .class3 .subclass3 h2 {
+.class3 .subclass3 .subsubclass3 h2 {
     font-size: 30px;
     font-weight: 700;
     font-family: "Rajdhani",sans-serif;
@@ -229,7 +233,7 @@ main .container .class3 .subclass3 h2 {
     margin-bottom: 0.8rem;
 }
 
-main .container .class3 .subclass3 p {
+.class3 .subclass3 .subsubclass3 p {
     margin-bottom: 2.5rem;
 }
 
