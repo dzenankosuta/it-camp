@@ -23,6 +23,8 @@ header {
     height: 15vh;
     background-color: #412fb3;
     color: #ffffff;
+    position: sticky;
+    top: 0;
 }
 
 header .container {
@@ -35,10 +37,6 @@ header .container .head {
     display: flex;
     justify-content: space-between;
     align-items: center;
-}
-
-.logo {
-    font-size: 1.2rem;
 }
 
 .navbar ul {
@@ -85,21 +83,68 @@ main {
 
 main .container .background {
     width: 100vw;
-    height: 650px;
+    height: 700px;
     background-image: url(./background.webp);
     background-position: cover;
 }
 
 main .container .background .firstcontent {
     margin: 0 auto;
-    max-width: 1366px;
+    max-width: 1300px;
     height: 100%;
     display: flex;
     justify-content:space-between;
     align-items: center;
+    color: #ffffff;
 }
 
 main .container .background .firstcontent img {
     flex-basis: 50%;
 }
 
+main .container .background .firstcontent .class1 {
+    flex-basis: 30%;
+    margin-right: 100px;
+}
+
+main .container .background .firstcontent .class1 h1 {
+    margin-bottom: 0.7em;
+    font-size: 2.5rem;
+    line-height: 3rem;
+}
+
+main .container .background .firstcontent .class1 p {
+    margin-bottom: 3em;
+}
+
+.button2 {
+    width: 160px;
+    height: 50px;
+    border: none;
+    border-radius: 15% / 50%;
+    font-weight: bolder;
+    color: #525252;
+}
+
+.button2:hover {
+    color: #ffffff;
+    background-color: #412fb3;
+    border: 1px solid #ffffff;
+}
+
+
+main .container .class2 {
+    margin: 7rem auto;
+    width: 50%;
+    text-align: center;
+}
+
+main .container .class2 h1 {
+    font-weight: 700;
+    color: #3a414e;
+    margin-bottom: 0.7rem;
+}
+
+main .container .class2 p {
+    color: #797979;
+}
