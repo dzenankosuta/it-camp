@@ -25,6 +25,7 @@ header {
     color: #ffffff;
     position: sticky;
     top: 0;
+    z-index: 10;
 }
 
 header .container {
@@ -197,7 +198,6 @@ main .container .boxes1 h3 {
     color: #3a414e;
     line-height: 1.25;
     margin-bottom: 0.8rem;
-
 }
 
 main .container .boxes1 .box1:hover {
@@ -258,4 +258,63 @@ main .container .boxes1 .box1:hover {
     color: #ffffff;
     background-color: #21146a;
     border: 1px solid #21146a;
+}
+
+main .container .class4 {
+    height: 650px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 4rem;
+}
+
+main .container .class4 .boxes2 {
+    margin-left: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+main .container .class4 .boxes2 .box2 {
+    text-align: center;
+    padding: 30px 23px;
+    background-color: #faf9ff;
+    width: 40%;
+
+    transition: all .3s ease 0s;
+    transition-property: all;
+    transition-duration: 0.3s;
+    transition-timing-function: ease;
+    transition-delay: 0s;
+}
+
+main .container .class4 .boxes2 h4 {
+    font-size: 22px;
+    font-weight: 600;
+    color: #3a414e;
+    line-height: 1.25;
+    margin-bottom: 0.8rem;
+}
+
+main .container .class4 .boxes2 .box2:hover {
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    background-color: #ffffff;
+}
+
+main .container .class4 .boxes2 .box2:nth-of-type(2) {
+    position: relative;
+    z-index: 0;
+    top: 40px;
+}
+
+main .container .class4 .boxes2 .box2:nth-of-type(3) {
+    position: relative;
+    z-index: 0;
+    top: 20px;
+}
+
+main .container .class4 .boxes2 .box2:nth-of-type(4) {
+    position: relative;
+    z-index: 0;
+    top: 60px;
 }
