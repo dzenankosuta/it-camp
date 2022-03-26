@@ -265,7 +265,7 @@ main .container .class4 {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 4rem;
+    margin-bottom: 7rem;
 }
 
 main .container .class4 .boxes2 {
@@ -317,4 +317,37 @@ main .container .class4 .boxes2 .box2:nth-of-type(4) {
     position: relative;
     z-index: 0;
     top: 60px;
+}
+
+.class5 {
+    width: 100vw;
+    background-color:#faf9ff;
+    height: 500px;
+}
+
+.class5 .subclass5 {
+    margin: 0 auto;
+    max-width: 1240px;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.class5 .subclass5 .subsubclass5 {
+    flex-basis: 40%;
+    margin-right: 90px;
+}
+
+.class5 .subclass5 .subsubclass5 h2 {
+    font-size: 30px;
+    font-weight: 700;
+    font-family: "Rajdhani",sans-serif;
+    color: #3a414e;
+    line-height: 1.25;
+    margin-bottom: 0.8rem;
+}
+
+.class5 .subclass5 .subsubclass5 p {
+    margin-bottom: 2.5rem;
 }
