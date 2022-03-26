@@ -322,7 +322,7 @@ main .container .class4 .boxes2 .box2:nth-of-type(4) {
 .class5 {
     width: 100vw;
     background-color:#faf9ff;
-    height: 500px;
+    height: 600px;
 }
 
 .class5 .subclass5 {
@@ -350,4 +350,101 @@ main .container .class4 .boxes2 .box2:nth-of-type(4) {
 
 .class5 .subclass5 .subsubclass5 p {
     margin-bottom: 2.5rem;
+}
+
+main .container .cards {
+    margin: 0 auto;
+    margin-bottom: 7rem;
+    max-width: 1150px;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-around;
+
+}
+
+main .container .cards .card {
+    background-color: #faf9ff;
+    flex-basis: 22rem;
+    transition: all .3s ease 0s;
+    transition-property: all;
+    transition-duration: 0.3s;
+    transition-timing-function: ease;
+    transition-delay: 0s;
+}
+
+main .container .cards .card .firstpart,
+main .container .cards .card .secondpart {
+    border-bottom: 1px solid #ebebeb;
+}
+
+
+main .container .cards .card .firstpart h4 {
+    padding-top: 35px;
+    color: #3a414e;
+    font-size: 27px;
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+
+
+
+main .container .cards .card .firstpart h1 {
+    color: #3a414e;
+    font-size: 40px;
+    font-weight: 700;
+    margin: 0;
+    padding: 40px 7px;
+}
+
+main .container .cards .card .secondpart ul {
+    padding: 30px 8px 25px 8px;
+    list-style-type: none;
+}
+
+main .container .cards .card .secondpart ul li{
+    margin-bottom: 12px;
+}
+
+#correctly {
+    color: #8a8a8a;
+    margin-right: 0.5rem;
+}
+
+#incorrectly {
+    color: #ff0000;
+    margin-right: 0.5rem;
+}
+
+main .container .cards .card .thirdpart {
+    padding: 45px 0;
+}
+
+.button4 {
+    width: 150px;
+    height: 50px;
+    border: 1px solid #412fb3;
+    border-radius: 15% / 50%;
+    font-weight: bolder;
+    font-size: 15px;
+    color: #525252;
+    background-color:#faf9ff;
+
+    transition: all .4s ease;
+    transition-property: all;
+    transition-duration: 0.4s;
+    transition-timing-function: ease;
+    transition-delay: 0s;
+}
+
+main .container .cards .card:hover {
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    background-color: #ffffff;
+}
+
+main .container .cards .card:hover .button4 {
+    color: #ffffff;
+    background-color: #21146a;
+    border: 1px solid #21146a;
 }
