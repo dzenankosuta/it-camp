@@ -20,7 +20,7 @@ body{
 
 header {
     width: 100vw;
-    height: 15vh;
+    max-height: 100px;
     background-color: #412fb3;
     color: #ffffff;
     position: sticky;
@@ -536,7 +536,7 @@ main .container .class7 img:hover {
 
 footer {
     width: 100vw;
-    height: 83vh;
+    min-height: 500px;
     background-color: #0e1424;
     color: #797979;
     position: relative;
