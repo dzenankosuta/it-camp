@@ -194,7 +194,6 @@ main .container .boxes1 .box1 {
 }
 
 main .container .boxes1 h3 {
-    font-family: "Rajdhani",sans-serif;
     color: #3a414e;
     line-height: 1.25;
     margin-bottom: 0.8rem;
@@ -227,7 +226,6 @@ main .container .boxes1 .box1:hover {
 .class3 .subclass3 .subsubclass3 h2 {
     font-size: 30px;
     font-weight: 700;
-    font-family: "Rajdhani",sans-serif;
     color: #3a414e;
     line-height: 1.25;
     margin-bottom: 0.8rem;
@@ -280,7 +278,7 @@ main .container .class4 .boxes2 .box2 {
     padding: 30px 23px;
     background-color: #faf9ff;
     width: 40%;
-
+    height: 250px;
     transition: all .3s ease 0s;
     transition-property: all;
     transition-duration: 0.3s;
@@ -448,3 +446,73 @@ main .container .cards .card:hover .button4 {
     background-color: #21146a;
     border: 1px solid #21146a;
 }
+
+.class6 {
+    width: 100vw;
+    background-color:#faf9ff;
+    height: 750px;
+}
+
+.class6 .subclass6 {
+    margin: 0 auto;
+    max-width: 1150px;
+    height: 100%;
+    
+}
+
+.class6 .subclass6 .class2 {
+    margin: 0 auto;
+    padding: 8rem 0;
+    width: 50%;
+    text-align: center;
+}
+
+.class6 .subclass6 .class2 h1 {
+    font-size: 30px;
+    font-weight: 700;
+    color: #3a414e;
+    line-height: 1.25;
+    margin-bottom: 0.8rem;
+}
+
+.class6 .subclass6 .class2 p {
+    color: #797979;
+    margin-bottom: 2.5rem;
+}
+
+.class6 .subclass6 .subsubclass6 {
+    margin: 0 auto;
+    width: 80%;
+    height: 220px;
+    background-color: #ffffff;
+    text-align: center;
+    position: relative;
+}
+
+.class6 .subclass6 .subsubclass6 img {
+    position: relative;
+    top: -90px;
+    
+}
+
+
+.class6 .subclass6 .subsubclass6 h3 {
+    margin-top: -80px;
+    color: #3a414e;
+    font-size: 22px;
+    font-weight: 600;
+    margin-bottom: 0;
+}
+
+.class6 .subclass6 .subsubclass6 p {
+    font-size: 14px;
+    margin-bottom: 0.5rem;
+}
+
+.class6 .subclass6 .subsubclass6 p.italic {
+    padding: 10px;
+    font-size: 15px;
+    font-style: italic;
+    margin-bottom: 0;
+}
+
