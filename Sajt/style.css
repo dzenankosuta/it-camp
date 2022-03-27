@@ -556,6 +556,7 @@ footer .container .footerfirst {
     gap: 30px;
     justify-content: space-between;
     align-items: start;
+    margin-bottom: 5rem;
 }
 
 footer .container .footerfirst .footerfirstboxes {
@@ -616,3 +617,44 @@ footer .container .footerfirst .footerfirstboxes button {
     font-size: 14px;
 }
 
+footer .container .footersecond {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: start;
+}
+
+footer .container .footersecond span {
+    font-size: 1.3rem;
+    color: #ffffff;
+}
+
+footer .container .footersecond a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+footer .container .footersecond .icons a {
+    padding: 7px;
+    background-color: #5d575f;
+    text-decoration: none;
+    color: #ffffff;
+}
+
+footer .container .footersecond .icons a:first-child {
+    padding: 7px 11px;
+}
+
+footer .container .footersecond .icons a:hover {
+    padding: 7px;
+    background-color: #ffffff;
+    text-decoration: none;
+    color: #2a1e77;
+}
+
+footer .container .footersecond .icons a:first-child:hover {
+    padding: 7px 11px;
+    background-color: #ffffff;
+    text-decoration: none;
+    color: #2a1e77;
+}
