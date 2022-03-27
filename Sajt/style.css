@@ -533,3 +533,86 @@ main .container .class7 img {
 main .container .class7 img:hover {
     opacity: 1;
 }
+
+footer {
+    width: 100vw;
+    height: 83vh;
+    background-color: #0e1424;
+    color: #797979;
+    position: relative;
+    bottom: 0;
+    z-index: 0;
+}
+
+footer .container {
+    height: 100%;
+    width: 80%;
+    padding: 100px 0;
+}
+
+footer .container .footerfirst {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: space-between;
+    align-items: start;
+}
+
+footer .container .footerfirst .footerfirstboxes {
+    flex-basis: 15%;
+}
+
+footer .container .footerfirst .footerfirstboxes:last-child {
+    flex-basis: 29%;
+}
+
+footer .container .footerfirst .footerfirstboxes h4 {
+    color: #ffffff;
+    font-size: 20px;
+    margin-bottom: 25px;
+    font-weight: 600;
+}
+
+footer .container .footerfirst .footerfirstboxes P {
+    margin-bottom: 1.5rem;
+}
+
+footer .container .footerfirst .footerfirstboxes ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+footer .container .footerfirst .footerfirstboxes ul li{
+    margin-bottom: 10px;
+}
+
+footer .container .footerfirst .footerfirstboxes ul li a{
+    text-decoration: none;
+    color: #797979;
+}
+
+footer .container .footerfirst .footerfirstboxes input {
+    height: 48px;
+    border: none;
+    width: 67%;
+    font-weight: 400;
+    background: rgba(255,255,255,.2);
+    color: #ffffff;
+    padding: 10px;
+    padding-left: 20px;
+    font-size: 14px;
+}
+
+footer .container .footerfirst .footerfirstboxes button {
+    color: #3a414e;
+    padding: 8px 20px;
+    border: 0;
+    background: #ffffff;
+    font-weight: 600;
+    position: relative;
+    top: -40px;
+    right: -160px;
+    font-size: 14px;
+}
+
