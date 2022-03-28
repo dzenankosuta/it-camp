@@ -277,6 +277,40 @@ main .container .boxes1 .box1:hover {
     background-color: #ffffff;
 }
 
+@media (max-width: 991px) {
+    main .container .class2 {
+        margin: 3rem auto;
+        width: 95%;
+        text-align: center;
+    }
+    
+    main .container .class2 h1 {
+        font-weight: 700;
+        color: #3a414e;
+        margin-bottom: 0.7rem;
+        font-size: 28px;
+    }
+    main .container .boxes1 {
+        width: 90%;
+        margin-bottom: 5rem;
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    main .container .boxes1 .box1 {
+        text-align: center;
+    }
+    
+    main .container .boxes1 .box1:hover {
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        background-color: #ffffff;
+    }
+}
+
+
 .class3 {
     width: 100vw;
     background-color:#faf9ff;
