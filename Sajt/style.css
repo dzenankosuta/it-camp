@@ -596,13 +596,18 @@ footer .container .footerfirst .footerfirstboxes ul li a{
 footer .container .footerfirst .footerfirstboxes input {
     height: 48px;
     border: none;
-    width: 67%;
+    width: 64%;
     font-weight: 400;
     background: rgba(255,255,255,.2);
     color: #ffffff;
     padding: 10px;
     padding-left: 20px;
     font-size: 14px;
+}
+
+footer .container .footerfirst .footerfirstboxes input:focus {
+    outline: none;
+    box-shadow: none;
 }
 
 footer .container .footerfirst .footerfirstboxes button {
@@ -612,8 +617,7 @@ footer .container .footerfirst .footerfirstboxes button {
     background: #ffffff;
     font-weight: 600;
     position: relative;
-    top: -40px;
-    right: -160px;
+    left: -55px;
     font-size: 14px;
 }
 
