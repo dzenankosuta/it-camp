@@ -690,6 +690,29 @@ main .container .cards .card:hover .button4 {
     border: 1px solid #21146a;
 }
 
+@media (max-width: 991px) {
+    main .container .cards {
+        margin-bottom: 5rem;
+        max-width: 991px;
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+        justify-content: start;
+    
+    }
+    
+    main .container .cards .card {
+        margin: 0 auto;
+        width: 94%;
+    }
+
+    .button4 {
+        width: 110px;
+        border-radius: 22% / 50%;
+    }
+    
+}
+
 .class6 {
     width: 100vw;
     background-color:#faf9ff;
