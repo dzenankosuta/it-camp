@@ -214,6 +214,7 @@ header .container .head .navbar ul li a:hover{
     .button2 {
         width: 120px;
         height: 45px;
+        border-radius: 17% / 50%;
     }
 }
 
@@ -545,6 +546,51 @@ main .container .class4 .boxes2 .box2:nth-of-type(4) {
 
 .class5 .subclass5 .subsubclass5 p {
     margin-bottom: 2.5rem;
+}
+
+@media (max-width: 991px) {
+    .class5 {
+        height: auto;
+    }
+    
+    .class5 .subclass5 {
+        margin: 0 auto;
+        max-width: 991px;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: center;
+    }
+
+    .class5 .subclass5 img {
+        margin: 0 auto;
+        margin-top: 60px;
+        margin-bottom: 25px;
+        width: 95%;
+    }
+
+    .class5 .subclass5 .subsubclass5 {
+        margin: 0 auto;
+        width: 95%;
+    }
+    
+    .class5 .subclass5 .subsubclass5 h2 {
+        font-size: 28px;
+        margin-bottom: 1.2rem;
+    }
+    
+    .class5 .subclass5 .subsubclass5 p {
+        margin-bottom: 1.8rem;
+    }
+
+    .class5 .subclass5 .subsubclass5 .button3 {
+        width: 130px;
+        height: 45px;
+        border-radius: 16% / 50%;
+        margin-bottom: 60px;
+    }
+        
 }
 
 main .container .cards {
