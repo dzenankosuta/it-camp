@@ -461,7 +461,58 @@ main .container .class4 .boxes2 .box2:nth-of-type(4) {
     top: 60px;
 }
 
-@media (max-width: 991px) {}
+@media (max-width: 991px) {
+    main .container .class4 {
+        height: auto;
+        max-width: 991px;
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: center;
+        margin-bottom: 0;
+    }
+    
+    main .container .class4 .boxes2 {
+        width: 100%;
+        margin-left: 0px;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        gap: 30px;
+    }
+
+    main .container .class4 .boxes2 .box2 {
+        margin: 0 auto;
+        padding: 30px 23px;
+        width: 90%;
+        height: auto;
+    }
+    
+    
+    main .container .class4 .boxes2 .box2:nth-of-type(2) {
+        position: static;
+        z-index: 0;
+        top: 0px;
+    }
+    
+    main .container .class4 .boxes2 .box2:nth-of-type(3) {
+        position: static;
+        z-index: 0;
+        top: 0px;
+    }
+    
+    main .container .class4 .boxes2 .box2:nth-of-type(4) {
+        position: static;
+        z-index: 0;
+        top: 0px;
+    }
+
+    main .container .class4 img {
+        width: 90%;
+        margin-top: 30px;
+        margin-bottom: 60px;
+    }
+}
 
 .class5 {
     width: 100vw;
