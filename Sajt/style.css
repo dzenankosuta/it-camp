@@ -988,3 +988,48 @@ footer .container .footersecond .icons a:first-child:hover {
     text-decoration: none;
     color: #2a1e77;
 }
+
+@media (max-width: 991px) {
+    footer {
+        height: auto;
+        background-color: #0e1424;
+        color: #797979;
+    }
+    
+    footer .container {
+        height: 100%;
+        width: 94%;
+        padding: 60px 0;
+    }
+
+    footer .container .footerfirst {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        justify-content: start;
+        align-items: start;
+        margin-bottom: 2.5rem;
+    }
+    
+    footer .container .footerfirst .footerfirstboxes {
+        width: 100%;
+    }
+    
+    footer .container .footerfirst .footerfirstboxes:last-child {
+        width: 100%;
+    }
+    
+    footer .container .footerfirst .footerfirstboxes h4 {
+        font-size: 18px;
+        margin-bottom: 15px;
+    }
+    
+    footer .container .footersecond {
+        text-align: center;
+        display: flex;
+        gap: 40px;
+        flex-direction: column;
+        align-items: center;
+        justify-content: start;
+    }
+}
