@@ -837,6 +837,29 @@ main .container .class7 img:hover {
     opacity: 1;
 }
 
+@media (max-width: 991px) {
+    main .container .class7 {
+        margin: 4rem auto;
+        max-width: 991px;
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+        justify-content: start;
+    }
+    
+    main .container .class7 img {
+        margin: 0 auto;
+        width: 30%;
+    }
+    
+    main .container .class7 img:nth-of-type(2),
+    main .container .class7 img:nth-of-type(3),
+    main .container .class7 img:nth-of-type(4),
+    main .container .class7 img:nth-of-type(5) {
+        display: none;
+    }
+}
+
 footer {
     width: 100vw;
     min-height: 500px;
