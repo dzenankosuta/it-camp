@@ -782,6 +782,43 @@ main .container .cards .card:hover .button4 {
     margin-bottom: 0;
 }
 
+@media (max-width: 991px) {
+    .class6 {
+        height: auto;
+        padding-bottom: 90px;
+    }
+    
+    .class6 .subclass6 {
+        max-width: 991px;  
+    }
+
+    .class6 .subclass6 .class2 {
+        padding: 4rem 0rem 8rem 0rem;
+        width: 94%;
+    }
+    
+    .class6 .subclass6 .class2 h1 {
+        font-size: 28px;
+    }
+    
+    .class6 .subclass6 .class2 p {
+        margin-bottom: 2rem;
+    }
+
+    .class6 .subclass6 .subsubclass6 {
+        width: 94%;
+        height: auto;
+    }
+    
+    .class6 .subclass6 .subsubclass6 p {
+        margin-bottom: 0.4rem;
+    }
+    
+    .class6 .subclass6 .subsubclass6 p.italic {
+        padding: 10px 15px 35px 15px;
+    }
+}
+
 main .container .class7 {
     margin: 7rem auto;
     max-width: 1100px;
