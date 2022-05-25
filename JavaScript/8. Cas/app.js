@@ -106,6 +106,6 @@ console.log(trazenaVrednost);
 
 // findIndex() method Vraca index prvog elementa koji je zadovoljio dati uslov
 
-// Koji je index prvog elementa niza godine koji je >= 18 i manji od ? 
+// Koji je index prvog elementa niza godine koji je >50 i manji od 100? 
 const trazenaVrednost2 = godine.findIndex((value) => value > 50 && value < 100);
 console.log(trazenaVrednost2);
