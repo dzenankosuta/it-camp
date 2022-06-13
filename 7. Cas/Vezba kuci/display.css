@@ -1,10 +1,15 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
 body {
     font-family: 'Hubballi', cursive;
-    background-color:#ddae71;
+    background-color: #ddae71;
 }
 
 .prvi {
-    background-color:#b43b3b;
+    background-color: #b43b3b;
     display: inline-block;
     float: left;
     width: 50%;
@@ -12,7 +17,7 @@ body {
 }
 
 .drugi {
-    background-color:#3bb478;
+    background-color: #3bb478;
     display: inline-block;
     float: left;
     width: 50%;
@@ -20,7 +25,7 @@ body {
 }
 
 .treci {
-    background-color:#9664d6;
+    background-color: #9664d6;
     display: inline-block;
     float: left;
     width: 50%;
@@ -28,7 +33,7 @@ body {
 }
 
 .cetvrti {
-    background-color:#f7cece;
+    background-color: #f7cece;
     display: inline-block;
     float: left;
     width: 50%;
@@ -39,7 +44,7 @@ body {
     margin: 60px auto;
     width: 300px;
     height: 350px;
-    background-color:#eee34e;
+    background-color: #eee34e;
     border: 1px dashed #8f3b3b;
     border-radius: 20px;
 }
@@ -52,13 +57,19 @@ body {
     margin-bottom: 10px;
 }
 
-.oglas h1, h2, h3, h4, h5, h6 {
+.oglas h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     text-transform: uppercase;
     text-align: center;
     margin: 10px;
 }
 
-.oglas i, p{
+.oglas i,
+p {
     margin: 4px 10px 0px 10px;
 }
 
@@ -66,10 +77,11 @@ body {
     margin-left: 8px;
 }
 
-.oglas span:hover, p:hover {
+.oglas span:hover,
+p:hover {
     color: #754a4a;
 }
 
 #mojid:hover {
-    color:#3d51a7;
+    color: #3d51a7;
 }
