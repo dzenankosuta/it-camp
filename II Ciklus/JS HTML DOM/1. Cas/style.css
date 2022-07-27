@@ -1,23 +1,23 @@
 .kocka {
-    width: 500px;
-    height: 500px;
-    background-color: #09543b;
+  width: 500px;
+  height: 500px;
+  background-color: #09543b;
 }
 
 .drugakocka {
-    width: 500px;
-    height: 500px;
-    background-color: #ffa178;
+  width: 500px;
+  height: 500px;
+  background-color: #ffa178;
 }
 
 .text {
-    color: white;
+  color: white;
 }
 
 .veci-font {
-    font-size: 50px;
+  font-size: 50px;
 }
 
 .sakrijdiv {
-    display: none;
+  display: none;
 }
