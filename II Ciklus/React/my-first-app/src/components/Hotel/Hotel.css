@@ -1,0 +1,75 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.hotel {
+  margin: 2rem auto;
+  padding: 1rem;
+  width: 60%;
+  height: 15rem;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  border: 1px solid #0202ff;
+  border-radius: 3px;
+}
+
+.hotel:hover {
+  background-color: #e2e2ff;
+}
+
+.img {
+  width: 25%;
+  height: 100%;
+  border-radius: 6px;
+  object-fit: cover;
+}
+
+.content {
+  padding: 0.5rem;
+  width: 60%;
+  height: 100%;
+  overflow: auto;
+}
+.naslov {
+  color: #2e2ed1;
+}
+
+.under {
+  color: #2e2ed1;
+  text-decoration: underline;
+}
+
+.buttons {
+  width: 15%;
+  height: 100%;
+  overflow: auto;
+  text-align: right;
+  color: #0c0ca8;
+  font-weight: bolder;
+  margin-top: 1rem;
+}
+
+.ocena {
+  color: #ffffff;
+  background-color: #252580;
+  padding-left: 0.2rem;
+  padding-right: 0.2rem;
+  border-radius: 22%;
+  font-size: larger;
+}
+
+.under2 {
+  color: #252580;
+}
+.button {
+  margin-top: 0.7rem;
+  cursor: pointer;
+  background-color: #0b30ff;
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  padding: 0.5rem;
+  box-shadow: 4px 4px 20px rgba(#ffffff, #ffffff, #ffffff, 1);
+}
