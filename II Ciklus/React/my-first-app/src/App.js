@@ -69,34 +69,36 @@ function App() {
   return (
     <div>
       <div className="card-container">
-        {persons.map((person) => (
+        {/* {persons.map((person) => (
           <PersonCard
             imageSrc={person.imageSrc}
             name={person.name}
             occupation={person.occupation}
           />
-        ))}
-        {/* <PersonCard
-          image={
+        ))} */}
+        <PersonCard
+          imageSrc={
             "https://images.pexels.com/photos/1172253/pexels-photo-1172253.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
           }
           name="Dzenan Kosuta"
           occupation="Okupacija"
+          verification
         />
         <PersonCard
-          image={
+          imageSrc={
             "https://images.pexels.com/photos/394781/pexels-photo-394781.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
           }
           name="Husko"
           occupation="Varioc"
         />
         <PersonCard
-          image={
+          imageSrc={
             "https://images.pexels.com/photos/1239291/pexels-photo-1239291.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
           }
           name="Emily"
           occupation="New"
-        /> */}
+          verification
+        />
       </div>
       <div>
         {hotels.map((hotel) => (
