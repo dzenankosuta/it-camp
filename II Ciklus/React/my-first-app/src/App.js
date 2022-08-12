@@ -58,7 +58,7 @@ const hotels = [
       "https://images.trvl-media.com/hotels/49000000/48670000/48669400/48669360/1fa60f05.jpg?impolicy=resizecrop&rw=1200&ra=fit",
     naziv: "Universal's Endless Summer Resort - Dockside Inn and Suites",
     lokacija: "7125 Universal Boulevard, Orlando, FL, 32819",
-    ocena: "9",
+    ocena: "6",
     ocenaLokacije: "8.2",
     deskripcija:
       "Just 2.2 mi (3.6 km) from the airport, Arlo Midtown features a rooftop terrace and puts you within a 10-minute drive of Broadway and Times Square.",
@@ -66,6 +66,7 @@ const hotels = [
 ];
 
 function App() {
+  const wellratedHotels = hotels.filter((hotel) => hotel.ocena > 7.5);
   return (
     <div>
       <div className="card-container">
@@ -101,7 +102,17 @@ function App() {
         />
       </div>
       <div>
-        {hotels.map((hotel) => (
+        {/* {hotels.map((hotel) => (
+          <Hotel
+            image={hotel.image}
+            naziv={hotel.naziv}
+            lokacija={hotel.lokacija}
+            ocena={hotel.ocena}
+            ocenaLokacije={hotel.ocenaLokacije}
+            deskripcija={hotel.deskripcija}
+          />
+        ))} */}
+        {wellratedHotels.map((hotel) => (
           <Hotel
             image={hotel.image}
             naziv={hotel.naziv}
