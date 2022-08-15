@@ -30,9 +30,9 @@ const Greeting = ({
       <p />
       <p />
       <p />
-      <button onClick={handleParentClick}>Child Component</button>{" "}
+      <button onClick={handleParentClick}>Child Component</button>
       {/* pozivanje funkcije iz parent componente */}
-      <Title clickHandler={handleParentClick} />{" "}
+      <Title clickHandler={handleParentClick} />
       {/* pozivanje funkcije iz parent componente za grandson */}
     </div>
   );
