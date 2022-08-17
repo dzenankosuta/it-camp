@@ -1,42 +1,74 @@
-import React from "react";
+import React, { useState } from "react";
 import "./App.css";
 import Greeting from "./components/Greeting/Greeting";
 import Incrementer from "./components/Incrementer/Incrementer";
 
 function App() {
-  const [count, setCount] = React.useState(0);
-  const handleClick2 = () => {
-    setCount(count + 1);
-  };
+  // const [name, setName] = useState("");
+  // const [email, setEmail] = useState("");
+  // const [hobi, setHobi] = useState("");
 
-  const handleClick = () => {
-    alert("Ova se funkcija nalazi u App.js");
-  };
-
-  const sayHello = (namee) => {
-    alert(`Hello ${namee}`);
-  };
-
-  // let count = 0;
+  const [userInput, setUserInput] = useState({
+    namee: "",
+    email: "",
+    hobi: "",
+  });
 
   return (
     <div className="card-container">
-      {/* <button onClick={() => sayHello("John")}>Click me</button>{" "} */}
-      {/* Primena funkcije onClick sa argumentom */}
-      {/* <button
-        onClick={() => {
-          sayHello("John");
-          console.log("Anonimna funkcija");
+      <form
+        onSubmit={(e) => {
+          e.preventDefault();
+          console.log(userInput.namee);
+          console.log(userInput.email);
+          console.log(userInput.hobi);
         }}
       >
-        {/* Primena funkcije onClick sa argumentom i primena neke anonimne funkcije */}
-      {/* Inline anonymus function
-      </button> */}
-
-      {count}
-      <button onClick={handleClick2}>Increase</button>
-      <Greeting name={"Dzenan"} handleParentClick={handleClick} />
-      <Incrementer />
+        <label htmlFor="html">Name</label>
+        <input
+          type="text"
+          id="html"
+          name="fav_language"
+          value={userInput.namee}
+          onChange={(event) =>
+            setUserInput((prev) => ({
+              ...prev,
+              namee: event.target.value,
+            }))
+          }
+        />
+        <br />
+        <label htmlFor="css">Email</label>
+        <input
+          type="email"
+          id="css"
+          name="fav_language"
+          value={userInput.email}
+          onChange={(event) =>
+            setUserInput((prev) => ({
+              ...prev,
+              email: event.target.value,
+            }))
+          }
+        />
+        <br />
+        <label htmlFor="javascript">Hobi</label>
+        <input
+          type="text"
+          id="javascript"
+          name="fav_language"
+          value={userInput.hobi}
+          onChange={(event) =>
+            setUserInput((prev) => ({
+              ...prev,
+              hobi: event.target.value,
+            }))
+          }
+        />
+        <br />
+        <br />
+        <input type="submit" defaultValue="Submit" />
+      </form>
     </div>
   );
 }
