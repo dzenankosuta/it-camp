@@ -2,38 +2,35 @@ import React, { useState } from "react";
 import "./App.css";
 import Greeting from "./components/Greeting/Greeting";
 import Incrementer from "./components/Incrementer/Incrementer";
+import TeamCard from "./components/TeamCard/TeamCard";
 
-const DATA = [
-  "Prva recenica",
-  "Druga recenica",
-  "Treca recenica",
-  "Cetvrta recenica",
-  "...",
-  "Stota recenica",
+const favoriteTeams = [
+  { id: 0, name: "Arsenal", points: 6 },
+  { id: 1, name: "Man. City", points: 6 },
+  { id: 2, name: "Man. United", points: 0 },
+  { id: 3, name: "Liverpool", points: 2 },
+  { id: 4, name: "Pazar", points: 9 },
+  { id: 5, name: "Partizan", points: 5 },
 ];
 
 function App() {
-  const [array, setArray] = useState(DATA);
-  // 1.
-  const generateNewWord = () => Math.random().toString(36).slice(2, 7);
-  // 2.
-  const reverseArray = () => {
-    const _array = [...array];
-    const reversed = _array.reverse();
-    setArray(reversed);
+  const [teams, setTeams] = useState(favoriteTeams);
+
+  const deleteTeam = (id) => {
+    const newTeams = teams.filter((team) => team.id !== id);
+    setTeams(newTeams);
   };
 
   return (
     <div className="card-container">
-      <button onClick={() => setArray((prev) => [generateNewWord(), ...prev])}>
-        Dodaj random recenicu
-      </button>
-      <button onClick={reverseArray}>REVERSE recenica</button>
-      <ul>
-        {array.map((value) => (
-          <li key={value}>{value}</li>
-        ))}
-      </ul>
+      {teams.map((team) => (
+        <TeamCard
+          key={team.id}
+          name={team.name}
+          points={team.points}
+          onDeleteTeam={() => deleteTeam(team.id)}
+        />
+      ))}
     </div>
   );
 }
