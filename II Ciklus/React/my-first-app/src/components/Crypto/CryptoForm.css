@@ -1,0 +1,17 @@
+.form {
+  margin: 1rem auto;
+  width: 600px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.btn1 {
+  width: 6rem;
+  height: 2rem;
+  background-color: #4cff52;
+  border: 1px dashed #9aff88;
+  cursor: pointer;
+}
+.h3 {
+  text-align: center;
+}
