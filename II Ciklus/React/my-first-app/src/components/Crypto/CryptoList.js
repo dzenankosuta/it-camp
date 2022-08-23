@@ -1,21 +1,26 @@
 import React, { useState } from "react";
 import "./CryptoList.css";
 
-const CryptoList = ({ name, value, deleteCrypto }) => {
-  const [showMore, setShowMore] = useState();
+const CryptoList = ({
+  name,
+  value,
+  deleteCrypto,
+  showMore,
+  isDescriptionVisible,
+}) => {
   return (
     <div>
       <div className="crypto-list">
         <p>{name}</p>
         <p>$ {value}</p>
-        <button className="btn2" onClick={() => setShowMore((prev) => !prev)}>
-          {!showMore ? "Show More" : "Show less"}
+        <button className="btn2" onClick={() => showMore()}>
+          {!isDescriptionVisible ? "Show More" : "Show less"}
         </button>
         <button className="btn2" onClick={deleteCrypto}>
           X
         </button>
       </div>
-      {showMore && (
+      {isDescriptionVisible && (
         <div>
           <p>More information about {name}</p>
         </div>

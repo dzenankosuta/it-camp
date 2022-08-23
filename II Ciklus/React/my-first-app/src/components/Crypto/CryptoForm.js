@@ -14,6 +14,7 @@ const listOfCrypto = [
 
 const CryptoForm = () => {
   const [cryptoList, setCryptoList] = useState(listOfCrypto);
+  const [showMore, setShowMore] = useState(null);
   const [userData, setUserData] = useState({
     name: "",
     value: "",
@@ -95,6 +96,16 @@ const CryptoForm = () => {
           key={value.id}
           name={value.name}
           value={value.value}
+          showMore={() =>
+            setShowMore((prevValue) => {
+              if (prevValue === value.id) {
+                return null;
+              } else {
+                return value.id;
+              }
+            })
+          }
+          isDescriptionVisible={showMore === value.id}
           deleteCrypto={() => deleteCrypto(value.id)}
         />
       ))}
