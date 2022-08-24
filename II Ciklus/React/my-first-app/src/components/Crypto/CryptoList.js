@@ -13,7 +13,7 @@ const CryptoList = ({
       <div className="crypto-list-item">
         <p>{name}</p>
         <p>$ {value}</p>
-        <button className="btn2" onClick={() => showMore()}>
+        <button className="btn2" onClick={showMore}>
           {!isDescriptionVisible ? "Show More" : "Show less"}
         </button>
         <button className="btn2" onClick={deleteCrypto}>
