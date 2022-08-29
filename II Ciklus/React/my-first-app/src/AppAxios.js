@@ -6,32 +6,28 @@ const BASE_URL = "https://api.quotable.io";
 
 function App() {
   const [authors, setAuthors] = useState([]);
-  const [pagination, setPagination] = useState({});
 
-  function getAuthors(page) {
-    axios
-      .get(`${BASE_URL}/authors?sortBy=quoteCount&page=${page}&limit=15`)
-      .then((res) => {
-        setPagination({
-          page: res.data.page,
-          lastPage: res.data.totalPages,
-        });
-        setAuthors(res.data.results);
-      });
+  function getQuote() {
+    axios.get(`${BASE_URL}/random`).then((res) => console.log(res.data));
   }
-
+  function getAuthors() {
+    try {
+      axios
+        .get(`${BASE_URL}/authors?sortBy=quoteCount`)
+        .then((res) => setAuthors(res.data.results));
+    } catch (e) {
+      alert(e);
+    }
+  }
   useEffect(() => {
-    getAuthors(1);
-  }, [pagination.page]);
-
+    getAuthors();
+  }, []);
   return (
     <div className="card-container">
-      <h1>
-        Page {1} of {pagination.lastPage}
-      </h1>
       {authors.length > 0 ? (
         authors.map((author) => (
-          <div key={author._id}>
+          <div>
+            {author._id}
             <h4>{author.name}</h4>
             <h5>{author.description}</h5>
             <p>{author.bio}</p>
