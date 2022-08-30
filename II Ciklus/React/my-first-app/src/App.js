@@ -7,8 +7,10 @@ const BASE_URL = "https://api.quotable.io";
 function App() {
   const [authors, setAuthors] = useState([]);
   const [pagination, setPagination] = useState({});
+  const [loading, setLoading] = useState(true);
 
   function getAuthors(page) {
+    setLoading(true);
     axios
       .get(`${BASE_URL}/authors?sortBy=quoteCount&page=${page}&limit=15`)
       .then((res) => {
@@ -17,6 +19,7 @@ function App() {
           lastPage: res.data.totalPages,
         });
         setAuthors(res.data.results);
+        setLoading(false);
       });
   }
 
@@ -33,7 +36,7 @@ function App() {
         onClick={() =>
           setPagination((prev) => ({
             ...prev,
-            page: pagination.page > 0 ? pagination.page-- : 1,
+            page: pagination.page > 1 ? pagination.page-- : 1,
           }))
         }
       >
@@ -52,7 +55,7 @@ function App() {
       >
         Next page
       </button>
-      {authors.length > 0 ? (
+      {!loading ? (
         authors.map((author) => (
           <div key={author._id}>
             <h4>{author.name}</h4>
