@@ -21,14 +21,37 @@ function App() {
   }
 
   useEffect(() => {
-    getAuthors(1);
+    getAuthors(pagination.page);
   }, [pagination.page]);
 
   return (
     <div className="card-container">
-      <h1>
-        Page {1} of {pagination.lastPage}
-      </h1>
+      <h2>
+        Page {pagination.page} of {pagination.lastPage}
+      </h2>
+      <button
+        onClick={() =>
+          setPagination((prev) => ({
+            ...prev,
+            page: pagination.page > 0 ? pagination.page-- : 1,
+          }))
+        }
+      >
+        Previous page
+      </button>
+      <button
+        onClick={() =>
+          setPagination((prev) => ({
+            ...prev,
+            page:
+              pagination.page < pagination.lastPage
+                ? pagination.page++
+                : pagination.lastPage,
+          }))
+        }
+      >
+        Next page
+      </button>
       {authors.length > 0 ? (
         authors.map((author) => (
           <div key={author._id}>
