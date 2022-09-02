@@ -1,31 +1,19 @@
 import axios from "axios";
 import React, { useEffect, useState } from "react";
 import "./App.css";
+import { useSomethingHere } from "./useSomethingHere";
 
 const BASE_URL = "https://api.quotable.io";
 
 function App() {
-  const [authors, setAuthors] = useState([]);
-  const [pagination, setPagination] = useState({});
-  const [loading, setLoading] = useState(true);
-
-  function getAuthors(page) {
-    setLoading(true);
-    axios
-      .get(`${BASE_URL}/authors?sortBy=quoteCount&page=${page}&limit=15`)
-      .then((res) => {
-        setPagination({
-          page: res.data.page,
-          lastPage: res.data.totalPages,
-        });
-        setAuthors(res.data.results);
-        setLoading(false);
-      });
-  }
-
-  useEffect(() => {
-    getAuthors(pagination.page);
-  }, [pagination.page]);
+  const {
+    authors,
+    setAuthors,
+    pagination,
+    setPagination,
+    loading,
+    setLoading,
+  } = useSomethingHere(BASE_URL);
 
   return (
     <div className="card-container">
@@ -39,6 +27,7 @@ function App() {
             page: pagination.page > 1 ? pagination.page-- : 1,
           }))
         }
+        disabled={pagination.page === 1}
       >
         Previous page
       </button>
@@ -52,6 +41,7 @@ function App() {
                 : pagination.lastPage,
           }))
         }
+        disabled={pagination.page === pagination.lastPage}
       >
         Next page
       </button>
