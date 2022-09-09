@@ -13,7 +13,7 @@ const darkTheme = createTheme({
   },
 });
 
-// Material UI
+// SPA - Single Page Application
 function App() {
   return (
     <ThemeProvider theme={darkTheme}>
