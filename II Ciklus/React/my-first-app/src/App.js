@@ -5,6 +5,7 @@ import BottomNavigation from "@mui/material/BottomNavigation";
 import BottomNavigationAction from "@mui/material/BottomNavigationAction";
 import HomePage from "./components/pages/HomePage/HomePage";
 import TeamPage from "./components/pages/TeamPage/TeamPage";
+import AboutPage from "./components/pages/AboutPage/AboutPage";
 import { useNavigate } from "react-router-dom";
 
 // SPA - Single Page Application
@@ -45,7 +46,7 @@ function App() {
       </Box>
       <Routes>
         <Route path="/" element={<HomePage />} />
-        <Route path="about" element={<h1>About page</h1>} />
+        <Route path="about" element={<AboutPage />} />
         <Route path="team" element={<TeamPage />} />
       </Routes>
     </div>
