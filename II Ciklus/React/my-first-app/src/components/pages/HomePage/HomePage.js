@@ -1,7 +1,8 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 const HomePage = () => {
+  const navigate = useNavigate();
   let btnStyle = {
     padding: "0.8rem",
     background: "#9ad24e",
@@ -18,7 +19,9 @@ const HomePage = () => {
         <button style={btnStyle}>Go to about</button>
       </Link>
       <h2>Click the button to access Team Page</h2>
-      <button style={btnStyle}>Go to our team</button>
+      <button style={btnStyle} onClick={() => navigate("team")}>
+        Go to our team
+      </button>
     </>
   );
 };
