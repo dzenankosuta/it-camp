@@ -9,14 +9,38 @@ import { useNavigate } from "react-router-dom";
 
 // SPA - Single Page Application
 function App() {
+  let linkStyle = {
+    padding: "2rem",
+    color: "#091d91",
+    fontSize: "2rem",
+  };
+  let activeStyle = {
+    padding: "2rem",
+    color: "#19665f",
+    fontSize: "2rem",
+  };
   return (
     <div className="card-container">
-      <h1>Welcome to React Router!</h1>
       <Box sx={{ width: 500 }}>
-        <BottomNavigation>
-          <BottomNavigationAction label="Home" />
-          <BottomNavigationAction label="Favorites" />
-          <BottomNavigationAction label="Team" />
+        <BottomNavigation showLabels>
+          <NavLink
+            to="/"
+            style={({ isActive }) => (isActive ? activeStyle : linkStyle)}
+          >
+            Home
+          </NavLink>
+          <NavLink
+            to="about"
+            style={({ isActive }) => (isActive ? activeStyle : linkStyle)}
+          >
+            About
+          </NavLink>
+          <NavLink
+            to="team"
+            style={({ isActive }) => (isActive ? activeStyle : linkStyle)}
+          >
+            Team
+          </NavLink>
         </BottomNavigation>
       </Box>
       <Routes>
