@@ -1,7 +1,26 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const HomePage = () => {
-  return <h1>Ovo je Home page</h1>;
+  let btnStyle = {
+    padding: "0.8rem",
+    background: "#9ad24e",
+    border: "none",
+    borderRadius: "1rem",
+    cursor: "pointer",
+  };
+  return (
+    <>
+      <p> From home page you can acces any other page on one more way</p>
+      {/* Two ways to go to other route: */}
+      <h2>Click the button to access About Page</h2>
+      <Link to="about">
+        <button style={btnStyle}>Go to about</button>
+      </Link>
+      <h2>Click the button to access Team Page</h2>
+      <button style={btnStyle}>Go to our team</button>
+    </>
+  );
 };
 
 export default HomePage;
