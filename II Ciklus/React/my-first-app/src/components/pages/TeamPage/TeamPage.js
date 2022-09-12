@@ -1,4 +1,5 @@
 import React from "react";
+import { useLocation } from "react-router-dom";
 import TeamCard from "./TeamCard";
 
 const TEAM = [
@@ -68,6 +69,7 @@ const TEAM = [
 ];
 
 const TeamPage = () => {
+  const location = useLocation();
   return (
     <>
       <h1>This is our Team</h1>
